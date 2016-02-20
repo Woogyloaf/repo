@@ -1,12 +1,36 @@
 // ***********************************
 // BANNER
 // ***********************************
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700")
 body
   margin 0
   padding 0
   font-family 'Open Sans', sans-serif
-  background #333
+
+.myad
+  margin 0 auto
+  border 1px solid #ccc
+  box-sizing border-box
+  color inherit
+  width 300px
+  height 250px
+  display inline-block
+  position relative
+  overflow hidden
+  background-color #fff
+  opacity 0
+  .myad-img
+    background url(../images/graphics.png) no-repeat 0px 0px
+  .back
+    width 300px
+    height 250px
+    background-position 0 0
+  .myad_logo
+    width inherit
+    height 55px
+    background-position 0px -658px
+    top 195px
+    left 0px
 
 *
   user-drag none
@@ -14,135 +38,52 @@ body
   -webkit-user-drag none
 
 div
-  // position absolute
-  -webkit-backface-visibility hidden
+  position absolute
 
 html
   -ms-text-size-adjust 100%
   -webkit-text-size-adjust 100%
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-a
-	text-decoration: none
 
-.ads-container
-	width 300px
-	height 250px
-	// background lightgreen
-	position relative
-	overflow hidden
-	margin 50px auto
+.invbtn
+  width 300px
+  height 250px
+  cursor pointer
 
-.top-view
-	width 300px
-	height 190px
-	background #4183C4
-	overflow hidden
-	display flex
-.bottom-view
-	position relative
-	width 300px
-	background white
-	height 60px
-// .logo
-// 	width 300px
-// 	height 100px
-// 	display block
-// 	background url('../images/') no-repeat
-	
-.bottom-logo
-	position absolute
-	left 12px
-	top 15px
-	width 133px
-	height 26px
-	display block
-	background url('../images/coca-cola_logo.svg') no-repeat
-	
+.cta
+  top 210px
+  display inline-block
+  width 117px
+  height 22px
+  background #d92330
+  border-radius 4px
+  right 21px
+  cursor pointer
+  #copy
+    color #fff
+    text-transform uppercase
+    font-size .6em
+    line-height 22px
+    text-align center
+    font-weight 700
+    position relative
 
-.image-1
-.image-2
-.image-3
-.image-4
-.image-5
-	position absolute
-	width 300px
-	// left 360px
-	height 190px
-	overflow hidden
-	background-size cover
+.shine
+  position absolute
+  top 0
+  left 0
+  background rgba(255,255,255,0)
+  background-repeat no-repeat
+  background -webkit-gradient(linear, left top, right bottom, color-stop(22%, rgba(255,255,255,0)), color-stop(25%, rgba(255,255,255,.5)), color-stop(49%, rgba(255,255,255,0)))
+  background linear-gradient(135deg, rgba(255,255,255,0) 22%, rgba(255,255,255,.5) 49%, rgba(255,255,255,0) 76%)
+  // filter progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 )
+  background-repeat no-repeat
+  border-radius 4px
 
-.image-1
-	background #fff url('../images/img-1.jpg') center no-repeat
-.image-2
-	background #fff url('../images/img-2.jpg') center no-repeat
-.image-3
-	background #fff url('../images/img-3.jpg') center no-repeat
-.image-4
-	background #fff url('../images/img-3.jpg') center no-repeat
-.image-5
-	background #fff url('../images/img-4.jpg') center no-repeat
+.shine
+  width 117px
+  height 22px
+  background-size 116px 25px
+  background-position -78px 0
 
-
-
-.slide-1
-.slide-2
-.slide-3
-.slide-4
-.slide-5
-	position absolute
-	// width 100%
-	// height 100%
-	left 0
-	right 0
-	top 0
-	bottom 0
-	margin auto
-
-.tf-box-1
-.tf-box-2
-.tf-box-3
-.tf-box-4
-.tf-box-5
-	position relative
-	width 235px
-	height 135px
-	top 28px
-	left 29px
-	background rgba(#FFF, 0.5)
-.tf-1
-.tf-2
-.tf-3
-.tf-4
-.tf-5
-	position absolute
-	font-size 23px
-	font-family $open-sans
-	font-weight 600
-	font-style none
-	text-decoration none
-	color #2F508E
-	box-sizing border-box
-	text-align left 
-.tf-1
-.tf-3
-.tf-5
-	left 39px
-	top 57px
-.tf-2
-.tf-4
-	text-align right
-	top 57px
-	right 39px
-.slide-5
-	h1
-		text-align center
-		font-family $open-sans
-		color white
-		font-size 44px
-.color-line
-	height 3px
-	width 300px
-	background-color #4183c4
-	position absolute
-	bottom 0

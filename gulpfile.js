@@ -15,8 +15,8 @@ var stylus = require('gulp-stylus');
 var imagemin = require('gulp-imagemin');
 
 var autoprefixer  = require('gulp-autoprefixer');
-var react         = require('react');
-var reactDOM      = require('react-dom');
+// var react         = require('react');
+// var reactDOM      = require('react-dom');
 
 
 
