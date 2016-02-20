@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="ad.size" content="width=300,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Template 300x250</title>
+
+<!-- WARNING -->
+<!-- Remove for production-->
+<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="controls/controls.css">
+<!-- Remove for production-->
+<!-- WARNING -->
+
+
+		<link href="css/style.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			var clickTag = "https://www.google.com";
+		</script>
+	</head>
+	<body>
+<div class="ads-container">
+        <a class='clickTag' href="javascript:window.open(window.clickTag); void(0)">
+            <div class="below-click-tag">
+            	<div class="top-view">
+            	<div class="slide-5">
+            		<h1>Logo!</h1>
+            		<div id="app"></div>
+            		<div id="area"></div>
+				</div><!-- ./ slide-5 -->
+            	<div class="slide-4">
+            	<div class="image-4"></div>
+           			<div class="image-4"></div>
+					<div class="tf-box-4"></div>
+					<div class="tf-4">Some cool<br>staff happen here</div>
+				</div><!-- ./ slide-4 -->
+           		<div class="slide-3">
+           			<div class="image-3"></div>
+					<div class="tf-box-3"></div>
+					<div class="tf-3">Some cool<br>staff happen here</div>
+				</div><!-- ./ slide-3 -->
+            	<div class="slide-2">
+            		<div class="image-2"></div>
+					<div class="tf-box-2"></div>
+					<div class="tf-2">Some cool<br>staff happen here</div>
+				</div><!-- ./ slide-2 -->
+            	<div class="slide-1">
+					<div class="image-1"></div>
+					<div class="tf-box-1"></div>
+					<div class="tf-1">Some cool<br>staff happen here</div>
+            	</div><!-- ./ slide-1 -->
+            	</div><!-- ./ top-view -->
+            </div>
+        </a>
+        <a class='clickTag' href="javascript:window.open(window.clickTag); void(0)">
+            <div class="cta-container">
+                <!-- cta goes here -->
+                <div class="bottom-view">
+                <div class="bottom-logo"></div>
+					<button href="#" class="ads-button">
+						<span class="shine"></span>
+						<span class="text">Click Me</span>
+					</button>
+					<div class="color-line"></div>
+                </div>
+
+            </div>
+        </a>
+        <div class="above-click-tag"></div>
+</div>
+
+<div id="area"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<!-- WARNING -->
+<!-- Remove for production-->
+<!-- CONTROLS BUTTONS -->
+<div style="clear:both"></div>
+<div class="play-buttons">
+<button id="play">play()</button>
+<button id="pause">pause()</button>
+<button id="reverse">reverse()</button>
+<button id="resume">resume()</button>
+<!-- <button id="stagger">play("stagger")</button> -->
+<button id="restart">restart</button>
+</div>
+<div style="clear:both"></div>
+<div id="sliderWrapper">
+<div id="slider"></div>
+</div>
+<!--  /CONTROLS BUTTONS -->
+
+<script type="text/javascript">
+
+	var tl = new TimelineLite();
+	tl.from(".top-view",1, {opacity:0},"same-0")
+	.from(".bottom-view",.3, {bottom:-50,opacity:0},"same-0")
+	.to(".top-view", 1 ,{opacity:1},"same")
+	.to(".top-view", 1 ,{opacity:1},"same")
+	
+	// slide #1
+	.to(".tf-box-1", 1, {left:-50},"same")
+	.to(".tf-box-1", 1, {width:314},"same")
+	.to(".tf-1", .3, {left:-350})
+	.to(".tf-box-1", .3, {left:-350})
+	.to(".image-1", .3, {left:-350, autoAlpha:0})
+	.to(".slide-1", .3, {display:"none"})
+
+	// slide #2
+	.to(".tf-box-2", 1, {right:50},"same-2")
+	.to(".tf-box-2", 1, {width:314},"same-2")
+	.to(".tf-2", .3, {right:-350})
+	.to(".tf-box-2", .3, {left:350})
+	.to(".image-2", .3, {right:-350, autoAlpha:0})
+	.to(".slide-2", .3, {display:"none"})
+
+	// slide #3
+	.to(".tf-box-3", 1, {left:-50},"same-3")
+	.to(".tf-box-3", 1, {width:314},"same-3")
+	.to(".tf-3", .3, {left:-350})
+	.to(".tf-box-3", .3, {left:-350})
+	.to(".image-3", .3, {left:-350, autoAlpha:0})
+	.to(".slide-3", .3, {display:"none"})
+
+	// slide #4
+	.to(".tf-box-4", 1, {right:50},"same-4")
+	.to(".tf-box-4", 1, {width:314},"same-4")
+	.to(".tf-4", .3, {right:-350})
+	.to(".tf-box-4", .3, {left:350})
+	.to(".image-4", .3, {right:-350, autoAlpha:0})
+	.to(".slide-4", .3, {display:"none"})
+
+	// slide #5
+	.to(".tf-box-5", 1, {left:-50},"same-5")
+	.to(".tf-box-5", 1, {width:314},"same-5")
+	.to(".tf-5", .3, {left:-350})
+	// .to(".tf-box-5", .3, {left:-350})
+	// .to(".image-5", .3, {left:-350, autoAlpha:0})
+	// .to(".slide-5", .3, {display:"none"})
+
+	// .to(".tf-box", 1, {left:50})
+	// .to(".tf-box", 1, {width:314})
+
+	// .to(".image-2", 2.3, { left:0})
+	// .to(".image-2", 3, {left:360})
+
+	// .to(".image-3", 2.3, { left:0})
+	// .to(".image-3", 3, {left:360})
+
+	// .to(".image-4", 2.3, { left:0})
+	// .to(".image-4", 3, {left:360})
+
+	// .to(".image-5", 2.3, { left:0})
+	// .to(".image-5", 3, {left:360})
+</script>
+
+<!-- Remove for production-->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/jquery.ui.touch-punch.js'></script>
+
+<script src="controls/index.js"></script>
+<!-- Remove for production-->
+<!-- WARNING -->
+		<script src="js/main.js"></script>
+
+
+	</body>
+</html>

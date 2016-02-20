@@ -1,0 +1,73 @@
+/*************************************************
+     CONTROLS                                 
+*************************************************/
+
+.play-buttons {
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button:nth-child(1){
+  margin-left:10px;
+}
+button:nth-child(1){
+  margin-left:10px;
+}
+
+#slider{
+  width: 580px;
+  margin:10px auto;
+  
+}
+
+#play{
+	background: seagreen;
+	color: white;
+	border: 2px solid seagreen;
+}
+#pause{
+	background: orange;
+	color: white;
+	border: 2px solid orange;
+}
+#reverse{
+	background: olive;
+	color: white;
+	border: 2px solid olive;
+}
+
+#reverse{
+	background: mediumseagreen;
+	color: white;
+	border: 2px solid mediumseagreen;
+}
+#resume{
+	background: seagreen;
+	color: white;
+	border: 2px solid seagreen;
+}
+#restart{
+	background: teal;
+	color: white;
+	border: 2px solid teal;
+}
+
+.ui-widget-content {
+  /*background-color:rgba(255, 255, 255, 0.2);*/
+  background:ccc;
+}
+.ui-corner-all {
+
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid teal;
+    background: teal;
+    font-weight: normal;
+    color: mediumseagreen;
+}

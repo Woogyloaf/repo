@@ -1,0 +1,77 @@
+button.ads-button
+  width 100px
+  height 30px
+  background #333
+  display block
+  position absolute
+  bottom 15px
+  right 15px
+  // margin 20px auto 0
+  margin 0
+  overflow hidden
+  border 1px solid #333333
+  color white
+  padding 0
+  text-decoration none
+  -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+  box-shadow:inset 0px 1px 0px 0px #54a3f7;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+  background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  // filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+  background-color:#007dc1;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  // border:1px solid #124d77;
+  cursor:pointer;
+  color:#ffffff;
+  // text-decoration:none;
+  // text-shadow:0px 1px 0px #154682;
+  span
+    &.text
+      text-decoration none
+    //   // position absolute
+    //   // top 16px
+    //   // left 65px
+    //   // font 15px Arial
+    &.shine
+      content ''
+      position absolute
+      height 300px
+      width 20px
+      background white
+      top -80px
+      left -20px
+      display block
+      opacity .5
+      -webkit-box-shadow 0px 0px 10px 5px white
+      -moz-box-shadow 0px 0px 10px 5px white
+      box-shadow 0px 0px 10px 5px white
+      -webkit-transform rotate(-45deg)
+      -moz-transform rotate(-45deg)
+      -ms-transform rotate(-45deg)
+      -o-transform rotate(-45deg)
+      transform rotate(-45deg)
+      -webkit-transition all 1s ease
+      -moz-transition all 1s ease
+      -ms-transition all 1s ease
+      -o-transition all 1s ease
+      transition all 1s ease
+  &:hover
+    -webkit-box-shadow inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4)
+    -moz-box-shadow inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4)
+    box-shadow inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4)
+    span
+      &.shine
+        left 170px
+        top -300px
+  &:active
+    -webkit-box-shadow inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5)
+    -moz-box-shadow inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5)
+    box-shadow inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5)
+
